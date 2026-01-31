@@ -1,0 +1,4 @@
+{
+  "installCommand": "node -v && npm -v && npm install --no-audit --no-fund",
+  "buildCommand": "npm run build"
+}

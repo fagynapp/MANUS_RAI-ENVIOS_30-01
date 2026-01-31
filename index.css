@@ -1,0 +1,30 @@
+/*
+  Global typography standardization
+  - Inter as primary UI font
+  - Consistent baseline sizing
+  - Reusable utility classes for menus/tabs/labels
+*/
+
+:root {
+  /* Baseline */
+  --app-line-height: 1.45;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 14px;
+  line-height: var(--app-line-height);
+}
+
+/* Headings: keep visual hierarchy consistent across pages */
+h1 { font-size: 1.25rem; font-weight: 800; line-height: 1.25; }
+h2 { font-size: 1.125rem; font-weight: 800; line-height: 1.25; }
+h3 { font-size: 1rem; font-weight: 700; line-height: 1.25; }
+
+/* Reusable patterns (used by components via className) */
+.app-menu-label { font-size: 0.95rem; font-weight: 700; }
+.app-menu-label--sub { font-size: 0.85rem; font-weight: 600; }
+
+.app-tab-btn { font-size: 0.9rem; font-weight: 700; }
+.app-text { font-size: 0.95rem; font-weight: 400; }
+.app-label { font-size: 0.9rem; font-weight: 600; }
